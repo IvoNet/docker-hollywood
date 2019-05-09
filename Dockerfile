@@ -6,9 +6,10 @@ RUN apt-get update \
  &&	add-apt-repository ppa:hollywood/ppa \
  &&	apt-get update \
  &&	apt-get install -y --no-install-recommends \
- &&	hollywood \
+  	hollywood \
  && apt-get clean \
- && rm -rf /var/lib/apt/lists/* /tmp/*
+ && rm -rf /var/lib/apt/lists/* /tmp/* \
+ && updatedb
 
 ENV HOME /home/busyguy
 RUN useradd --create-home --home-dir $HOME busyguy \
