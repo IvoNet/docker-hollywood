@@ -8,12 +8,10 @@ and is great fun for those who want to seem very busy.
 
 Just for fun :-)
 
-
 # Build and push
 
 docker build -t USERNAME_HERE/hollywood .
 docker push USERNAME_HERE/hollywood
-
 
 ---
 # License
