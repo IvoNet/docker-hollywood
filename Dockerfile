@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-LABEL maintainer="Ivo Woltring <webmaster@ivonet.nl>"
+LABEL maintainer="Ivo Woltring @ivonet"
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends software-properties-common \
