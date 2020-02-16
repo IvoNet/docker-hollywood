@@ -8,8 +8,7 @@ RUN apt-get update \
  &&	apt-get install -y --no-install-recommends \
   	hollywood \
  && apt-get clean \
- && rm -rf /var/lib/apt/lists/* /tmp/* \
- && updatedb
+ && rm -rf /var/lib/apt/lists/* /tmp/*
 
 ENV HOME /home/busyguy
 RUN useradd --create-home --home-dir $HOME busyguy \
